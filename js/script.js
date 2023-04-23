@@ -315,7 +315,7 @@ function howbtnneed(arrayObj, No) {
        return bbttnn;   
 }
 
-fetch(' https://slavastoyko.github.io/list_Customers/JSONdata/list_Customers.json')
+fetch('https://slavastoyko.github.io/list_Customers/JSONdata/list_Customers.json')
 .then((response) =>{return response.json()}).then((data) => {JSONfile(data);});
 function JSONfile(data) {
     for(let key in data){
