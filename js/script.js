@@ -256,7 +256,7 @@ function setData(slicearray) {
     for (let index = 0; index < slicearray.length; index++) {
         const titleCustomers= slicearray[index];
         
-      tableinfo.children[0].insertAdjacentHTML("afterend",'<tr class="tr Rtr"><td class="td data_block">'+titleCustomers["Customer Name"]+'</td><td class="td ">'+titleCustomers["Company"]+'</td><td class="td ">'+titleCustomers["Phone Number"]+'</td><td class="td ">'+titleCustomers["Email"]+'</td><td class="td ">'+titleCustomers["Country"]+'</td><td class="td "><span class= "status">'+titleCustomers["Status"]+'</span></td></tr>');
+      tableinfo.children[0].insertAdjacentHTML("afterend",'<tr class="tr Rtr tbody"><td class="td data_block">'+titleCustomers["Customer Name"]+'</td><td class="td ">'+titleCustomers["Company"]+'</td><td class="td ">'+titleCustomers["Phone Number"]+'</td><td class="td ">'+titleCustomers["Email"]+'</td><td class="td ">'+titleCustomers["Country"]+'</td><td class="td "><span class= "status">'+titleCustomers["Status"]+'</span></td></tr>');
     
        }
        const status = document.querySelectorAll(".status");
