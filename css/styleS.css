@@ -71,7 +71,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   letter-spacing: -0.01em;
   margin: 0 auto;
   max-width: 1440px;
@@ -106,10 +105,8 @@ body {
     position: absolute;
     right: 14px;
     content: ">";
-    width: 10px;
-    height: 10px;
     color: #9197B3; /* заміна в js */
-    transform: translateY(10px);
+    transform: translateY(3px);
   }
 }
 @media screen and (max-width: 800px) {
@@ -149,6 +146,12 @@ body {
     line-height: 39px;
     font-weight: 600;
   }
+  .menu__link, .title_text, .title_ver, .autor_name {
+    display: none;
+  }
+  .menu {
+    padding: 2px;
+  }
 }
 .ajs * {
   color: white;
@@ -171,6 +174,12 @@ body {
 }
 
 .btnP:hover {
+  background-color: #5932EA;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btnP.onActive {
   background-color: #5932EA;
   color: #FFF;
   cursor: pointer;
@@ -221,11 +230,15 @@ body {
   margin-top: 69.11px;
 }
 .nav li {
-  padding: 11px 0px 11px 9.55px;
+  padding: 11px 8px 11px 8px;
   border-radius: 8px;
 }
-.nav li svg {
-  transform: translateY(7px);
+.nav nav {
+  flex-grow: 1;
+}
+
+.menu_items:hover {
+  background-color: #5932ea;
 }
 
 a {
@@ -278,6 +291,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  /* #search:focus, #lablelSearch{vi} */
 }
 .searchinfo_title {
   font-size: 22px;
@@ -287,6 +301,7 @@ ul {
 .searchinfo_title > p {
   color: #16C098;
   font-size: 14px;
+  visibility: hidden;
 }
 .searchinfo_form {
   position: relative;
@@ -357,7 +372,7 @@ label img {
     display: block;
   }
   tbody {
-    display: table-cell;
+    display: inline-flex;
   }
   .table .th, .table .td {
     text-align: start;
@@ -389,8 +404,7 @@ label img {
 .navbtn_check * {
   width: 25px;
 }
-.navbtn_check {
-  position: absolute;
+.navbtn_check { /* position: absolute; */
   left: 0px;
   top: -5px;
   z-index: 1;
@@ -402,11 +416,11 @@ label img {
   height: 25px;
 }
 
-.btnwraper {
-  height: 30px;
+.btnwraper { /* height: 30px; */
   overflow: hidden;
   margin-right: 25px;
   position: relative;
+  width: 330px;
 }
 
 .arrow {
@@ -461,4 +475,10 @@ label img {
   color: #fff;
   stroke: #fff;
   fill: #fff;
+}
+
+.svgicon {
+  width: 24px;
+  height: 24px;
+  fill: #FFF;
 }/*# sourceMappingURL=styleS.css.map */
