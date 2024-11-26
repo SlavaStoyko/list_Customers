@@ -164,7 +164,7 @@ body {
 }
 
 .btnP {
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   border-radius: 4px;
   background-color: #F5F5F5;
   text-align: center;
@@ -301,7 +301,7 @@ ul {
 .searchinfo_title > p {
   color: #16C098;
   font-size: 14px;
-  visibility: hidden;
+ /*  visibility: hidden; */
 }
 .searchinfo_form {
   position: relative;
@@ -401,20 +401,12 @@ label img {
 .navbtn_items {
   color: #B5B7C0;
 }
-.navbtn_check * {
-  width: 25px;
-}
-.navbtn_check { /* position: absolute; */
-  left: 0px;
-  top: -5px;
-  z-index: 1;
+
+.navbtn_check {
   display: flex;
+  gap: 5px;
 }
-.navbtn_check div {
-  margin: 0px 2px;
-  width: 25px;
-  height: 25px;
-}
+
 
 .btnwraper { /* height: 30px; */
   overflow: hidden;
@@ -481,4 +473,9 @@ label img {
   width: 24px;
   height: 24px;
   fill: #FFF;
-}/*# sourceMappingURL=styleS.css.map */
+}
+  .navbtn_check .btnP{
+    padding: 0px 10px;
+    margin: 0px 2px;
+    height: 25px;
+  }
