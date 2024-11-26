@@ -5,7 +5,6 @@ export const pagloop = (arrows, params, N) => {
     const element = arrows[index];
     element.addEventListener("click", function () {
         params[0].style.transform = "translateX(" + 25 + "px)";
-      //let L =  e[layerY];
       if (index == 0) {
         step = step - 35;
         params[0].style.transform = "translateX(-" + step + "px)";

@@ -18,5 +18,5 @@ export const getActivebtnP = (data, viewportContent) => {
     }
     event.target.classList.add("onActive");
     sliceContent(data, viewportContent, event.target.innerText);
-    getStatusmessageData(event.target.innerText, btnAll[0].children.length, data.length);
+    getStatusmessageData(event.target.innerText, btnAll.length, data.length);
   };
